@@ -13,19 +13,23 @@ Feature: Product Compare
     Given  Navigate to OpenCart web page
     When I enter "<product1>" into the Search field
     And click on the Search button
-    And I Select Compare This Product option
+    And I Select Compare This Product option in the search results
+    And I clear the search data
     When I enter "<product2>" into the Search field
     And click on the Search button
-    And I Select Compare This Product option
+    And I Select Compare This Product option in the search results
+    And I clear the search data
     When I enter "<product3>" into the Search field
     And click on the Search button
-    And I Select Compare This Product option
+    And I Select Compare This Product option in the search results
+    And I clear the search data
     When I enter "<product4>" into the Search field
     And click on the Search button
-    And I Select Compare This Product option
+    And I Select Compare This Product option in the search results
+    And I clear the search data
     When I enter "<product5>" into the Search field
     And click on the Search button
-    And I Select Compare This Product option
+    And I Select Compare This Product option in the search results
     When I click on product comparison link from the success message
     Then I should see last four products are displayed in the product comparison page with all the proper product details and the buttons
     Then The first added product should be removed from the product comparison page

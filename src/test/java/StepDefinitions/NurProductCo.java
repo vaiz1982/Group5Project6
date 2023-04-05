@@ -1,4 +1,4 @@
-package StepDefinitons;
+package StepDefinitions;
 
 import Pages.NurPOMPage;
 import Utilities.BasicDriver;
@@ -6,8 +6,6 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
-
-import javax.swing.*;
 
 public class NurProductCo {
    NurPOMPage oc=new NurPOMPage();

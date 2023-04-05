@@ -1,4 +1,4 @@
-package StepDefinitons;
+package StepDefinitions;
 
 import Pages.NurPOMPage;
 import io.cucumber.java.en.And;

@@ -1,4 +1,4 @@
-package StepDefinitons;
+package StepDefinitions;
 
 import Pages.SercanPOMPage;
 import Utilities.BasicDriver;

@@ -1,4 +1,4 @@
-package StepDefinitons;
+package StepDefinitions;
 
 import Pages.SercanPOMPage;
 import Utilities.BasicDriver;
@@ -6,18 +6,9 @@ import Utilities.MyMethods;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Wait;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-
-import java.time.Duration;
-import java.util.List;
-import java.util.concurrent.ThreadLocalRandom;
 
 public class SercanProductC extends MyMethods {
     SercanPOMPage page = new SercanPOMPage();
@@ -39,6 +30,7 @@ public class SercanProductC extends MyMethods {
 
     @And("I Select Compare This Product option")
     public void iSelectCompareThisProductOption() {
+        scrollMethod(page.getSiteMapButton());
         WebElement randomButton = page.getCompareButtons().get((int) (Math.random() * page.getCompareButtons().size()));
         page.clickMethod(randomButton);
 
@@ -77,5 +69,15 @@ public class SercanProductC extends MyMethods {
     @Then("The first added product should be removed from the product comparison page")
     public void theFirstAddedProductShouldBeRemovedFromTheProductComparisonPage() {
         Assert.assertFalse(page.getAllDescriptions().contains("iMac"));
+    }
+
+    @And("I Select Compare This Product option in the search results")
+    public void iSelectCompareThisProductOptionInTheSearchResults() {
+        page.clickMethod(page.getCompareButtonInSearchResult());
+    }
+
+    @And("I clear the search data")
+    public void iClearTheSearchData() {
+        page.getSearchBox().clear();
     }
 }
