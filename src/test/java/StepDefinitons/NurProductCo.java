@@ -45,13 +45,15 @@ public class NurProductCo {
       oc.clickMethod(oc.getShoppingCartButton());
    }
 
+   @And("I click on the product comparison link in the success message")
+   public void iClickOnTheProductComparisonLinkInTheSuccessMessage() throws InterruptedException {
+      Thread.sleep(2000);
+      oc.clickMethod(oc.getInTheSuccessMessageProductComparisonLink());
+   }
+
    @Then("user should see the shopping cart")
    public void userShouldSeeTheShoppingCart() {
       Assert.assertTrue(oc.getItemInTheCart().isDisplayed());
    }
 
-   @And("I click on the product comparison link in the success message")
-   public void iClickOnTheProductComparisonLinkInTheSuccessMessage() {
-      oc.clickMethod(oc.getInTheSuccessMessageProductComparisonLink());
-   }
 }
