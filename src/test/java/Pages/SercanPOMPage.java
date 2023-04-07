@@ -108,7 +108,7 @@ public class SercanPOMPage extends MyMethods {
     @FindBy (linkText = "iMac")
     private WebElement iMacResultText;
 
-    @FindBy (linkText = "Apple Cinema 30\"")
+    @FindBy (linkText = "Apple Cinema 30\"") 
     private WebElement appleCinema;
 
     @FindBy (xpath = "//li[normalize-space()='Reward Points: 100']")

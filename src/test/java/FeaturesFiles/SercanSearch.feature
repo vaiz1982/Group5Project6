@@ -1,4 +1,4 @@
-Feature: Search Functionality
+ Feature: Search Functionality
 
   Background:
     Given Navigate to OpenCart web page
