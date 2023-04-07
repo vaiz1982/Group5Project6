@@ -1,5 +1,7 @@
 Feature: Forgot Password
 
+  ## Two of the scenario from here couldn't be automated due to forgotten password link is not delivering to the email
+
   Scenario: Validate User is able to reset the password
     Given Open the Application URL in any supported Browser
     When Click on Forgotten Password link from Login page

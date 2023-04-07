@@ -2,7 +2,7 @@ Feature: Search Functionality
 
   Scenario Outline: Validate List and Grid views when multiple Products are displayed in the search results
     Given Open the Application URL in any supported Browser
-    When Enter the search criteria in the Search text box field which can result in multiple products - "<Search Criteria>"
+    When Enter any existing Product name into the Search text box field - "<Search Criteria>"
     When Click on the button having search icon
     Then More than one products should be displayed in the search results page
     When Select List option
