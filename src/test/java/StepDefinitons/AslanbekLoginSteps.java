@@ -13,6 +13,8 @@ public class AslanbekLoginSteps {
 
     @And("I should get logged in and taken to the Account page")
     public void iShouldGetLoggedInAndTakenToTheAccountPage() {
-        Assert.assertEquals(BasicDriver.getDriver().getTitle(),"My Account");
+        String actualResult = BasicDriver.getDriver().getTitle();
+        String expectedResult = "My Account";
+        Assert.assertEquals(actualResult,expectedResult);
     }
 }
