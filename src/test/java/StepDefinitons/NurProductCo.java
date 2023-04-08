@@ -7,8 +7,6 @@ import io.cucumber.java.en.Then;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 
-import javax.swing.*;
-
 public class NurProductCo {
    NurPOMPage oc=new NurPOMPage();
 
