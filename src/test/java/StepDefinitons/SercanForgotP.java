@@ -1,4 +1,4 @@
-package StepDefinitions;
+package StepDefinitons;
 
 import Pages.SercanPOMPage;
 import Utilities.MyMethods;

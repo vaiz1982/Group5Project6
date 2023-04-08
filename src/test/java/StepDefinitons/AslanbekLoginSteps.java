@@ -1,4 +1,4 @@
-package StepDefinitions;
+package StepDefinitons;
 
 import Utilities.BasicDriver;
 import io.cucumber.java.en.And;

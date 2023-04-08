@@ -1,13 +1,10 @@
-package StepDefinitions;
+package StepDefinitons;
 
 import Pages.SercanPOMPage;
-import Utilities.BasicDriver;
 import Utilities.MyMethods;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.interactions.Action;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 
 public class SercanProductD extends MyMethods {

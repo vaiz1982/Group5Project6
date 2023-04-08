@@ -1,4 +1,4 @@
-package StepDefinitions;
+package StepDefinitons;
 
 public class StepDefinitions {
 }

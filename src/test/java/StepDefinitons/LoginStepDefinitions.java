@@ -1,4 +1,4 @@
-package StepDefinitions;
+package StepDefinitons;
 
 import Pages.Pages;
 import Utilities.BasicDriver;
