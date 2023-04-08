@@ -161,6 +161,24 @@ public class HasanPOMPage extends MyMethods {
     @FindBy(xpath = "//input[@id='input-voucher']")
     private WebElement placeHolderNameInTextField;
 
+    @FindBy(xpath = "(//a[@href='http://opencart.abstracta.us:80/index.php?route=common/home'])[2]")
+    private WebElement homeIcon;
+
+    @FindBy(xpath = "//span[text()='Checkout']")
+    private WebElement checkOutButton;
+
+    @FindBy(xpath = "//span[text()='Shopping Cart']")
+    private WebElement shoppingCartButton;
+
+    @FindBy(xpath = "//a[text()='Checkout']")
+    private WebElement checkOutButtonOnShoppingCartPage;
+
+    @FindBy(xpath = "//input[@id='button-payment-address']")
+    private WebElement billingAddressContinueButton;
+
+    @FindBy(xpath = "(//input[@name='shipping_address'])[2]")
+    private WebElement useNewAddressRadioButton;
+
     public WebElement getMyAccount() {
         return myAccount;
     }
@@ -359,5 +377,29 @@ public class HasanPOMPage extends MyMethods {
 
     public WebElement getLoginButton() {
         return loginButton;
+    }
+
+    public WebElement getHomeIcon() {
+        return homeIcon;
+    }
+
+    public WebElement getCheckOutButton() {
+        return checkOutButton;
+    }
+
+    public WebElement getShoppingCartButton() {
+        return shoppingCartButton;
+    }
+
+    public WebElement getCheckOutButtonOnCheckOutPage() {
+        return checkOutButtonOnShoppingCartPage;
+    }
+
+    public WebElement getCheckOutButtonOnShoppingCartPage() {
+        return checkOutButtonOnShoppingCartPage;
+    }
+
+    public WebElement getBillingAddressContinueButton() {
+        return billingAddressContinueButton;
     }
 }
